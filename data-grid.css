@@ -1,0 +1,159 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.grid {
+	overflow: hidden;
+	width: auto;
+}
+
+.container,
+.module {
+	float: left;
+}
+
+.grid[data-grid-align="center"],
+.container[data-grid-align="center"] {
+	margin: 0 auto;
+	float: none;
+}
+
+.grid[data--grid-align="right"],
+.container[data-grid-align="right"] {
+	margin: 0px 0px 0px auto;
+	float: none;
+}
+
+.module {
+	box-sizing: border-box;
+	padding: 0 10px;
+	margin-bottom: 10px;
+}
+
+
+/* 12er Grid */
+[data-grid-l="1"]  { width:  8.33333%; }
+[data-grid-l="2"]  { width: 16.66666%; }
+[data-grid-l="3"]  { width: 25%; }
+[data-grid-l="4"]  { width: 33.33333%; }
+[data-grid-l="5"]  { width: 41.66666%; }
+[data-grid-l="6"]  { width: 50%; }
+[data-grid-l="7"]  { width: 58.33333%; }
+[data-grid-l="8"]  { width: 66.66666%; }
+[data-grid-l="9"]  { width: 75%; }
+[data-grid-l="10"] { width: 83.33333%; }
+[data-grid-l="11"] { width: 91.66666%; }
+[data-grid-l="12"] { width: 100%; }
+
+/* Special Grid width */
+[data-grid-l="5er"]{ width: 20%; }
+
+[data-grid-l="1-fix"],
+[data-grid-m="1-fix"],
+[data-grid-s="1-fix"]  { width:  80px; }
+[data-grid-l="2-fix"],
+[data-grid-m="2-fix"],
+[data-grid-s="2-fix"]  { width: 160px; }
+[data-grid-l="3-fix"],
+[data-grid-m="3-fix"],
+[data-grid-s="3-fix"]  { width: 240px; }
+[data-grid-l="4-fix"],
+[data-grid-m="4-fix"],
+[data-grid-s="4-fix"]  { width: 320px; }
+[data-grid-l="5-fix"],
+[data-grid-m="5-fix"]  { width: 400px; }
+[data-grid-l="6-fix"],
+[data-grid-m="6-fix"]  { width: 480px; }
+[data-grid-l="7-fix"],
+[data-grid-m="7-fix"]  { width: 560px; }
+[data-grid-l="8-fix"],
+[data-grid-m="8-fix"]  { width: 640px; }
+[data-grid-l="9-fix"]  { width: 720px; }
+[data-grid-l="10-fix"] { width: 800px; }
+[data-grid-l="11-fix"] { width: 880px; }
+[data-grid-l="12-fix"] { width: 960px; }
+
+[data-grid-l="0"] { display: none; }
+
+@media screen and (min-width: 640px) and (max-width: 959px) {
+	[data-grid-m] { display: block; }
+	[data-grid-m="0"] { display: none; }
+
+	[data-grid-l="1"],
+	[data-grid-l][data-grid-m="1"]  { width: 12.5%; }
+	[data-grid-l="2"],
+	[data-grid-l][data-grid-m="2"]  { width: 25%; }
+	[data-grid-l="3"],
+	[data-grid-l][data-grid-m="3"]  { width: 37.5%; }
+	[data-grid-l="4"],
+	[data-grid-l][data-grid-m="4"]  { width: 50%; }
+	[data-grid-l="5"],
+	[data-grid-l][data-grid-m="5"]  { width: 62.5%; }
+	[data-grid-l="6"],
+	[data-grid-l][data-grid-m="6"]  { width: 75%; }
+	[data-grid-l="7"],
+	[data-grid-l][data-grid-m="7"]  { width: 87.5%;}
+	[data-grid-l="8"],
+	[data-grid-l][data-grid-m="8"]  { width: 100%;}
+    [data-grid-l="5er"],
+	[data-grid-l][data-grid-m="5er"],
+	[data-grid-l][data-grid-s="5er"]  { width: 20%; }
+
+	[data-grid-l="9"],
+	[data-grid-l="10"],
+	[data-grid-l="11"],
+	[data-grid-l="12"] { width: 100%; }
+
+	[data-grid-l="9-fix"],
+	[data-grid-l="10-fix"],
+	[data-grid-l="11-fix"],
+	[data-grid-l="12-fix"] { width: 640px; }
+}
+
+@media screen and (max-width: 639px) {
+	[data-grid-s] { display: block; }
+	[data-grid-m="0"],
+	[data-grid-s="0"] { display: none; }
+
+
+	[data-grid-l="1"],
+	[data-grid-l][data-grid-m="1"],
+	[data-grid-l][data-grid-s="1"],
+	[data-grid-l][data-grid-m][data-grid-s="1"]  { width: 25%; }
+	[data-grid-l="2"],
+	[data-grid-l][data-grid-m="2"],
+	[data-grid-l][data-grid-s="2"],
+	[data-grid-l][data-grid-m][data-grid-s="2"]  { width: 50%; }
+	[data-grid-l="3"],
+	[data-grid-l][data-grid-m="3"],
+	[data-grid-l][data-grid-s="3"],
+	[data-grid-l][data-grid-m][data-grid-s="3"]  { width: 75%; }
+	[data-grid-l="4"],
+	[data-grid-l][data-grid-m="4"],
+	[data-grid-l][data-grid-s="4"],
+	[data-grid-l][data-grid-m][data-grid-s="4"] { width: 100%; }
+    [data-grid-l="5er"],
+	[data-grid-l][data-grid-m="5er"],
+	[data-grid-l][data-grid-s="5er"],
+	[data-grid-l][data-grid-m][data-grid-s="5er"]  { width: 20%; }
+
+	[data-grid-l="5"],
+	[data-grid-l="6"],
+	[data-grid-l="7"],
+	[data-grid-l="8"],
+	[data-grid-l="9"],
+	[data-grid-l="10"],
+	[data-grid-l="11"],
+	[data-grid-l="12"] { width: 100%; }
+
+	[data-grid-l="5-fix"],
+	[data-grid-l="6-fix"],
+	[data-grid-l="7-fix"],
+	[data-grid-l="8-fix"],
+	[data-grid-l="9-fix"],
+	[data-grid-l="10-fix"],
+	[data-grid-l="11-fix"],
+	[data-grid-l="12-fix"]{ width: 320px; }
+}
