@@ -97,7 +97,7 @@ body {
 	[data-grid-l][data-grid-m="7"]  { width: 87.5%;}
 	[data-grid-l="8"],
 	[data-grid-l][data-grid-m="8"]  { width: 100%;}
-    [data-grid-l="5er"],
+  [data-grid-l="5er"],
 	[data-grid-l][data-grid-m="5er"],
 	[data-grid-l][data-grid-s="5er"]  { width: 20%; }
 
@@ -134,7 +134,7 @@ body {
 	[data-grid-l][data-grid-m="4"],
 	[data-grid-l][data-grid-s="4"],
 	[data-grid-l][data-grid-m][data-grid-s="4"] { width: 100%; }
-    [data-grid-l="5er"],
+  [data-grid-l="5er"],
 	[data-grid-l][data-grid-m="5er"],
 	[data-grid-l][data-grid-s="5er"],
 	[data-grid-l][data-grid-m][data-grid-s="5er"]  { width: 20%; }
